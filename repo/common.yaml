@@ -4,7 +4,7 @@ jenkins::slave::masterurl: 'http://192.168.122.112:8080'
 
 master::ip: 192.168.122.112
 
-jenkins-slave::gpg_key_id: 'E5944336'
+jenkins-slave::gpg_key_id: 'C5D452CA710AE757BADCBDA519807D2A8AB9E518'
 jenkins-slave::gpg_private_key: |
     -----BEGIN PGP PRIVATE KEY BLOCK-----
 
@@ -13,22 +13,22 @@ jenkins-slave::gpg_private_key: |
     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
-    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
+    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
@@ -41,29 +41,29 @@ jenkins-slave::gpg_private_key: |
     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
-    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
+    h0XXBrm7NClkMIjXEXtQckCeLGqHmkulUEDnqQARAQAB/gcDAuTGQp15//E451gi
+    /PXoBH0LwS3L6tktplWXalNpe7msGgrzWdFPXnhFP9eqiOM7fs7Jvw045t0rAP3+
+    hFK8rRRy/WeBy/dQUZ5YBceaQi93MhR/n9ibIn20jjdHHL33mhb53khYpe4oLmpb
+    MnYFJPUyw2waFadbtHQb2KPNYQsBauKU3LOQVf6vdfV5wXpB2LdNIpFAGjZvO7Dy
+    5kxYZT9jdLuuWruKVIaFZVBgFU5hBWq71/oY802UXcyYH+JPFS/Eaq0p4CLssKle
+    zMpNwzmZeIhlgic4XvnWV+p1A0NRbRQ9vlCjw6B1LmIP5cIvzRCjg1OzKOONHoQE
+    GtEoDD/CHQ7iCbzxME74YN0P6XpgzHbwTblNkRydRi4tcui70bKyM9fiB5AKkGCe
+    1Mci1/fb0FjUHTiR1+DyW/ZE0umildynk7jN8bty1l1WnB30yw5Mg2L3Is4T6UGr
+    4dkSCSC7HUigEQgrdsJUpI4/Siw6w7cKU09ZAEhhZUL4RNYWjc2+dx1Erzaxc8qs
+    W3uWY9FOA3OI2kDS6hyQAHwYkx7VI5tm41YSalwakAfkyzpOradZE1Kgb+Vcaq4u
+    Q+OfiogbmTtjUUq/tYgdKGtQbCxoRWtSegJe9mNqBLfqcDuBaZIYaF1nHTONena3
+    5nW7YvfyczVcguu2qUohIciCP/8y5lu6dL/N7yUM6kUj3N/JNn9EViBvmuEam8+N
+    ZkqSqs6AJZNZ2CYHPIviaMuHR7MfhrrCtLH/qYB1N/bAjjme4IpD+BPi6OLwWy1M
+    E+bxMvzcZyZMvDvIKxiKynLYYagFfufLVH25jka/3maJjzCOhYfjOWmjN6SSchzR
+    LiTFDyFLkcbq2VBzwMeeoiFeH6T6lVowH1gMwUxGowlljre0hxsuymrN1inYHc2m
+    8ZYwRSvNxof42okBNgQYAQgAIBYhBMXUUspxCudXuty9pRmAfSqKueUYBQJYlhI1
     AhsMAAoJEBmAfSqKueUY4gQH+wa6xXDoanZlxXAEEfc9MUg7uzO4ty6TGIAO1MjP
     fPGa7ie5rDPpCtINJBmise4UNS1rL7eaFQa2Q7Hf/0fwsWT19wHlboJ5Y48TpszF
     5NeXNafVKzOfXlEhJvIKqyyYBUGQpOegdXG9XaUVCiuKZ377Vt1aULFezkGtBpKy
     OPqoCa19MVX4km+ko1I44fTjPVTVmV1IQjYWyD3+DD02tvf97iKMv7TdInaeL3wu
     NYRRK/4N/iTHtSckBbX7ZMfQ6mPpycHXazRAQRwmcME5jL3Mgv9zyP6TM4hm1Zvt
     RfxFm1xK9bmXPRDPeXUbhMipoTNQrNiaMpEYABZjpN2sAVA=
-    =UN+n
+    =ZxrB
     -----END PGP PRIVATE KEY BLOCK-----
 jenkins-slave::gpg_public_key: |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
