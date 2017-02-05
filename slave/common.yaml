@@ -1,21 +1,27 @@
 jenkins::slave::ui_user: 'admin'
-jenkins::slave::ui_pass: 'changeme'
-jenkins::slave::masterurl: 'http://master:8080'
-jenkins::slave::num_executors: 2
+jenkins::slave::ui_pass: 'den5031mat'
+jenkins::slave::masterurl: 'http://192.168.122.112:8080'
+jenkins::slave::num_executors: 1
 
-# master::ip: 54.67.30.249
-# repo::ip: 54.67.51.1
+master::ip: 192.168.122.112
+repo::ip: 192.168.122.193
 
 ssh_keys:
-    'tfoote@zug':
-        key: AAAAB3NzaC1yc2EAAAABIwAAAQEApDU8Bxx4a51OnPms2Kuw/9K6RA+Mjp1lGAn8GpKs1Mr2SOZattPd085v4dgc+Ydnud57Pk+FkuyOWvmd07AjQ+h2+OH9pE+pMVVWXddz36svQeVb0/yvgbCiMxPqQi//ctQmJmPEAuF6gs4imMSHTtmLdWYzqVGkJ4TZwpyERC/c7TyfVZ7zvkNZ2+3pcceiS5F86M/CNgRBvdLQ9jk6x3S93JR0V49xkxRUE428qFzuRggv8m//5hrgXCyty/ZUQlTI5CcwKsedQLcPtOjTTakCw9o7x0ShXYWKD7MelYkUPKbE0H4J87AVm9H9SGs02WsuAbOL7NacboMGCxIcsw==
+    'pete@lemon-cookie':
+        key: AAAAB3NzaC1yc2EAAAADAQABAAABAQCtntr1YYIKQe/JrM2Atm/kexmb0SsYNuE1yBP1do0hFK1A54jyJBl7964SjMwNgnxmsHJb0DKExyRTG1RacfUJGc/NRnA+rp1g6RStMxnndspSrINeriE6M8tK5+fqckELI12ShTTOellpdMqt2x2hiOq15R91pZ4o3RnQfhFPxF/es8ohF2HecdP0jB7A6zGekGsdA8zqgXbEEG5QOEDix3E3lfZm8Ykx0/4nLFvf1V5/qEgp7d+/tW6uyEJOG2RI85jFjGPeuANUFZ3kXnXw7f8cKVEt1e0rT8+Hyyd2ASKW5dxywHyv6V1/cJiSutDvLrGvHPE8fhwH5io8C8sn
         type: ssh-rsa
         user: root
+    'jenkins@rosarch-master':
+        key: AAAAB3NzaC1yc2EAAAADAQABAAABAQCjWxc+d+ZJ+WZtiBPDBsBB9f6Fsau+9ufhJpQyi8Yx9CnsuV6w+6rEZWvw0OBtxSQQxymyQPEDwdlCTUUMfrrYANSOwmhyCOHWYesyFG8JI6n5GQdp+5SgFMNcX7JGOpKh51ZFcpk1jtoE7CX9ozlHbLFY9kztEe9oM7flNM3R3MGZCmzHl82ud5mRZ/lB4uY/ZMZ+/MT4Y/6wqHMisRWwu0etLGeXcyqv4Sk9W0HQjrk9qg6UTbHOCkar3Gd22n/7FL/5xlWrgR3qdDQpIAnYY9GUp2OsQp5Q0nIR+7yBtmbiVbIj9WztwvL8E8mGciXd5uegM+enLEKwLn8MSbCH
+        type: ssh-rsa
+        user: jenkins-slave
+
 
 # Known hosts to use for things like uploading results.
 ssh_host_keys:
   repo: repo ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFc/Nq1TAnCl4XC4nFl6QNOLcJLw5vY0lkvMlVULn8jkQPn3iUy59Q2fja+h4lmQlD17iSY3o4luHUYkYKAdHcI=
   54.183.65.232: 54.183.65.232 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFc/Nq1TAnCl4XC4nFl6QNOLcJLw5vY0lkvMlVULn8jkQPn3iUy59Q2fja+h4lmQlD17iSY3o4luHUYkYKAdHcI=
+
 
 autoreconfigure: true
 autoreconfigure::command: 'bash -c "cd /root/buildfarm_deployment_config && git fetch origin master && git reset --hard origin/master && ./reconfigure.bash slave"'
